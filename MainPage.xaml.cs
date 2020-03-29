@@ -1,4 +1,4 @@
-using EveryThingSampleTools.UWP.UI;
+﻿using EveryThingSampleTools.UWP.UI;
 using System;
 using System.Collections.Generic;
 using System.IO;
