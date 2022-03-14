@@ -1,0 +1,18 @@
+﻿<Application
+    x:Class="KaiYan.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:KaiYan" 
+    xmlns:controls="using:Microsoft.UI.Xaml.Controls"
+    >
+    <Application.Resources>
+        <controls:XamlControlsResources>
+            <controls:XamlControlsResources.MergedDictionaries>
+                <!-- Other app resources here -->
+                <ResourceDictionary Source="/Templates/Resources.xaml"/>
+            </controls:XamlControlsResources.MergedDictionaries>
+        </controls:XamlControlsResources>
+        
+    </Application.Resources>
+    
+</Application>

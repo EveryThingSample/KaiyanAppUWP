@@ -1,0 +1,43 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:templates="using:KaiYan.Templates" xmlns:template="using:KaiYan.Template" xmlns:controls="using:KaiYan.Controls" xmlns:converters="using:KaiYan.Converters">
+
+    <converters:CollectConverter x:Key="collectConverter"/>
+    <converters:IsFollowConverter x:Key="isFollowConverter"/>
+    <converters:UrlToUriConverter x:Key="urlToUriConverter"/>
+    <converters:TimestampToTimeComverter x:Key="timestampToTimeComverter"/>
+    <converters:CountToStringConverter x:Key="countToStringConverter"/>
+
+    <Style x:Key="HorizontalItemContainerStyle" TargetType="ListViewItem">
+        <Setter Property="MinWidth" Value="{StaticResource SplitViewCompactPaneThemeLength}"/>
+        <Setter Property="Padding" Value="0"/>
+        <Setter Property="UseSystemFocusVisuals" Value="True" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ListViewItem">
+                    <ListViewItemPresenter ContentTransitions="{TemplateBinding ContentTransitions}"
+                        Control.IsTemplateFocusTarget="True"
+                        SelectionCheckMarkVisualEnabled="False"
+                        PointerOverBackground="{ThemeResource SystemControlHighlightListLowBrush}"
+                        PointerOverForeground="{ThemeResource ListViewItemForegroundPointerOver}"
+                        SelectedBackground="{ThemeResource ListViewItemSelectedBackgroundThemeBrush}"
+                        SelectedForeground="{ThemeResource ListViewItemSelectedForegroundThemeBrush}"
+                        SelectedPointerOverBackground="{ThemeResource SystemControlHighlightListLowBrush}"
+                        PressedBackground="{ThemeResource SystemControlHighlightListMediumBrush}"
+                        SelectedPressedBackground="{ThemeResource SystemControlHighlightListMediumBrush}"
+                        DisabledOpacity="{ThemeResource ListViewItemDisabledThemeOpacity}"
+                        HorizontalContentAlignment="Stretch"
+                        VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                        ContentMargin="{TemplateBinding Padding}"/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <ItemsPanelTemplate x:Key="HorizontalItemsPanelTemplate">
+        <VirtualizingStackPanel Orientation="Horizontal"
+                VerticalAlignment="Top">
+        </VirtualizingStackPanel>
+    </ItemsPanelTemplate>
+</ResourceDictionary>

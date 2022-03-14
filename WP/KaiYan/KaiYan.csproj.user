@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DeviceId>30f105c9-681e-420b-a277-7c086ead8a4e</DeviceId>
+    <UseEmulator>false</UseEmulator>
+    <RemoteDebugMachine>192.168.2.134</RemoteDebugMachine>
+    <AuthenticationMode>Universal</AuthenticationMode>
+    <RemoteDebugEnabled>false</RemoteDebugEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DeviceId>30f105c9-681e-420b-a277-7c086ead8a4e</DeviceId>
+    <UseEmulator>false</UseEmulator>
+    <RemoteDebugMachine>Windows-Phone</RemoteDebugMachine>
+    <AuthenticationMode>Universal</AuthenticationMode>
+    <RemoteDebugEnabled>true</RemoteDebugEnabled>
+  </PropertyGroup>
+  <PropertyGroup>
+    <UapAppxPackageBuildMode>SideloadOnly</UapAppxPackageBuildMode>
+    <AppxShowAllApps>True</AppxShowAllApps>
+    <AppxBuildConfigurationSelection>arm</AppxBuildConfigurationSelection>
+    <PackageOptionalProjectsInIdeBuilds>True</PackageOptionalProjectsInIdeBuilds>
+    <Source>C:\Users\majie\Pictures\图片1.png</Source>
+    <SmallTileSource>C:\Users\majie\Pictures\图片1.png</SmallTileSource>
+    <MediumTileSource>C:\Users\majie\Pictures\图片1.png</MediumTileSource>
+    <WideTileSource>C:\Users\majie\Pictures\图片1.png</WideTileSource>
+    <LargeTileSource>C:\Users\majie\Pictures\图片1.png</LargeTileSource>
+    <AppIconSource>C:\Users\majie\Pictures\图片1.png</AppIconSource>
+    <SplashScreenSource>C:\Users\majie\Pictures\图片1.png</SplashScreenSource>
+    <PackageLogoSource>C:\Users\majie\Pictures\图片1.png</PackageLogoSource>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <DeviceId>30f105c9-681e-420b-a277-7c086ead8a4e</DeviceId>
+    <UseEmulator>true</UseEmulator>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM64'">
+    <DeviceId>30f105c9-681e-420b-a277-7c086ead8a4e</DeviceId>
+    <UseEmulator>true</UseEmulator>
+  </PropertyGroup>
+</Project>
