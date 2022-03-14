@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{231AF86C-7104-413C-B294-CE471656F1AE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kaiyan.Core</RootNamespace>
+    <AssemblyName>Kaiyan.Core</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.19041.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.15063.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <PlatformTarget>ARM</PlatformTarget>
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM64'">
+    <PlatformTarget>ARM64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM64'">
+    <PlatformTarget>ARM64</PlatformTarget>
+    <OutputPath>bin\ARM64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Account.cs" />
+    <Compile Include="AccountBuilder.cs" />
+    <Compile Include="API\AccountHttp.cs" />
+    <Compile Include="API\CollectionHttp.cs" />
+    <Compile Include="API\ConsumptionHttp.cs" />
+    <Compile Include="API\FollowHttp.cs" />
+    <Compile Include="API\HttpBase.cs" />
+    <Compile Include="API\TabListHttp.cs" />
+    <Compile Include="Exceptions\HttpException.cs" />
+    <Compile Include="API\ReplyHttp.cs" />
+    <Compile Include="API\VideoHttp.cs" />
+    <Compile Include="Exceptions\NoMoreItemException.cs" />
+    <Compile Include="IAccount.cs" />
+    <Compile Include="Page\Body\Author.cs" />
+    <Compile Include="Page\Body\Tag.cs" />
+    <Compile Include="Page\Body\User.cs" />
+    <Compile Include="Page\Card\CardItem.cs" />
+    <Compile Include="Page\Card\CardItemFactory.cs" />
+    <Compile Include="Page\Card\Cards\AutoPlayFollowCard.cs" />
+    <Compile Include="Page\Card\Cards\BannerCard.cs" />
+    <Compile Include="Page\Card\Cards\BriefCard.cs" />
+    <Compile Include="Page\Card\Cards\HorizontalScrollCard.cs" />
+    <Compile Include="Page\Card\Cards\PictureFollowCard.cs" />
+    <Compile Include="Page\Card\Cards\SquareCardOfCommunityContent.cs" />
+    <Compile Include="Page\Body\PgcInfo.cs" />
+    <Compile Include="Page\Card\ProtocolHelper.cs" />
+    <Compile Include="Page\Card\Resource\IVideoResource.cs" />
+    <Compile Include="Page\Card\SquareCardItem.cs" />
+    <Compile Include="Page\Card\VideoCardItem.cs" />
+    <Compile Include="Page\Card\Cards\VideoSmallCard.cs" />
+    <Compile Include="Page\Card\CardType.cs" />
+    <Compile Include="Page\Card\Headers\AutoPlayHeader.cs" />
+    <Compile Include="Page\Body\BodyType.cs" />
+    <Compile Include="Page\Body\BodyBase.cs" />
+    <Compile Include="Page\Card\ICollectionCard.cs" />
+    <Compile Include="Page\Card\ICover.cs" />
+    <Compile Include="IKaiYanBase.cs" />
+    <Compile Include="Page\Card\IPictureCard.cs" />
+    <Compile Include="Page\Card\IVideoCardItem.cs" />
+    <Compile Include="KaiYanBase.cs" />
+    <Compile Include="Exceptions\NotLoginException.cs" />
+    <Compile Include="Page\Card\IPlayCardItem.cs" />
+    <Compile Include="Page\Card\PlayCardItem.cs" />
+    <Compile Include="Page\Card\Resource\UgcPictureResource.cs" />
+    <Compile Include="Page\Card\Resource\PlayInfo.cs" />
+    <Compile Include="Page\Card\Cards\FollowCard.cs" />
+    <Compile Include="Page\Card\ICardItem.cs" />
+    <Compile Include="Page\Card\Resource\RelatedVideoLoadTool.cs" />
+    <Compile Include="Page\Card\Resource\ResourceFactory.cs" />
+    <Compile Include="Page\Card\Resource\UgcResourceItem.cs" />
+    <Compile Include="Page\Card\Resource\UgcVideoResource.cs" />
+    <Compile Include="Page\Card\Resource\VideoResource.cs" />
+    <Compile Include="Page\Card\Resource\ResourceType.cs" />
+    <Compile Include="Page\Card\Cards\SquareCardCollection.cs" />
+    <Compile Include="Page\Card\Resource\ResourceItem.cs" />
+    <Compile Include="Page\Card\Headers\SquareCardHeader.cs" />
+    <Compile Include="Page\Card\Cards\TextCard.cs" />
+    <Compile Include="Page\Card\TextCardType.cs" />
+    <Compile Include="Page\Card\Headers\Header.cs" />
+    <Compile Include="Page\ILoadingItem.cs" />
+    <Compile Include="Page\IMainPageTool.cs" />
+    <Compile Include="Page\IPageTool.cs" />
+    <Compile Include="Page\IResourceItem.cs" />
+    <Compile Include="Page\MainPageTool.cs" />
+    <Compile Include="Page\PageTool.cs" />
+    <Compile Include="Page\PageType.cs" />
+    <Compile Include="Page\PageManager.cs" />
+    <Compile Include="Page\Reply\IReplyItem.cs" />
+    <Compile Include="Page\Reply\ParentReplyItem.cs" />
+    <Compile Include="Page\Reply\ReplyItem.cs" />
+    <Compile Include="Page\Reply\ReplyTool.cs" />
+    <Compile Include="Page\TabListTool.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Kaiyan.Core.rd.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.2.12</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>13.0.1</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EveryThingSampleTools.WP">
+      <HintPath>..\..\EveryThingSampleTools\EveryThingSampleTools.WP\bin\Release\EveryThingSampleTools.WP.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
