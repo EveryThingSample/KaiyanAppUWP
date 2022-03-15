@@ -120,9 +120,6 @@ namespace KaiYan.Templates.Models
         }
         public async void LikeSymbolIcon_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            (sender as UIElement).Tapped -= LikeSymbolIcon_Tapped;
-            try
-            {
                 if (await resourceItem.SetCollectedAsync(!resourceItem.IsCollected))
                 {
                     IsCollected = resourceItem.IsCollected;
@@ -139,11 +136,7 @@ namespace KaiYan.Templates.Models
                     }
                 }
 
-            }
-            finally
-            {
-                (sender as UIElement).Tapped += LikeSymbolIcon_Tapped;
-            }
+            
         }
     }
 }
