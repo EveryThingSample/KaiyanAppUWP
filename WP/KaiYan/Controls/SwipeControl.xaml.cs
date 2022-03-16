@@ -1,4 +1,4 @@
-﻿using EveryThingSampleTools.WP.Tools;
+using EveryThingSampleTools.WP.Tools;
 using EveryThingSampleTools.WP.UI.Controls;
 using System;
 using System.Collections.Generic;
@@ -61,8 +61,8 @@ namespace KaiYan.Controls
             }
             card.Closed += SwipeCard_Closed;
             card.Opened += SwipeCard_Opened;
-            card.SwipeStarting += SwipeCard_SwipeStarting;
-            card.Opening += SwipeCard_Opening;
+            card.SwipeStarted += SwipeCard_SwipeStarted;
+            card.SwipeCompleted += SwipeCard_SwipeCompleted;
             card.ShowLength = new ShowLength(ActualWidth, ShowUnitType.Pixel);
             (card.Content as Frame).RequestedTheme = requestedTheme;
             (card.Content as Frame).Navigate(pageType, parameter, NavigationTransitionInfo);
@@ -101,12 +101,11 @@ namespace KaiYan.Controls
             }
         }
 
-        private void SwipeCard_SwipeStarting(SwipeCard sender, object args)
+        private void SwipeCard_SwipeStarted(SwipeCard sender, object args)
         {
             FocusedCurrent = null;
         }
-
-        private void SwipeCard_Opening(SwipeCard sender, object args)
+        private void SwipeCard_SwipeCompleted(SwipeCard sender, object args)
         {
             if (FocusedCurrent == null)
             {
@@ -114,6 +113,7 @@ namespace KaiYan.Controls
                     FocusedCurrent = swipeCardStack.Peek();
             }
         }
+
 
         private void SwipeCard_Closed(SwipeCard sender, object args)
         {
