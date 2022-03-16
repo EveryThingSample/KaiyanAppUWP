@@ -105,11 +105,11 @@ namespace KaiYan.Controls
         {
             FocusedCurrent = null;
         }
-        private void SwipeCard_SwipeCompleted(SwipeCard sender, object args)
+        private void SwipeCard_SwipeCompleted(SwipeCard sender, SwipeCompletedEventArgs args)
         {
             if (FocusedCurrent == null)
             {
-                if (swipeCardStack.Peek().SwipeCard == sender)
+                if (swipeCardStack.Peek().SwipeCard == sender && args.IsClose == false)
                     FocusedCurrent = swipeCardStack.Peek();
             }
         }
