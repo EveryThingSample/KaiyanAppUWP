@@ -27,15 +27,8 @@ namespace KaiYan.Controls
             this.InitializeComponent();
             swipeCardStack = new Stack<StackItem> ();
             this.SizeChanged += FlyPageCollection_SizeChanged;
-            //this.ManipulationMode = ManipulationModes.TranslateX;
-            //this.ManipulationDelta += SwipeControl_ManipulationDelta;
         }
-        double maxD;
-        private void SwipeControl_ManipulationDelta(object sender, ManipulationDeltaRoutedEventArgs e)
-        {
-            if (maxD < e.Delta.Translation.X)
-                maxD = e.Delta.Translation.X;
-        }
+
 
         public int MaxCachedPagesCount { get; set; } = 2;
         public int MinCachedPagesCount { get; set; } = 2;
