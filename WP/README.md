@@ -1,5 +1,2 @@
 开眼视频APP WP版
-本开源项目，仅用于学习交流使用，本作者不承担任何责任。
-
-要求
-系统最低版本：15063
+请移步至https://github.com/EveryThingSample/KaiYan
